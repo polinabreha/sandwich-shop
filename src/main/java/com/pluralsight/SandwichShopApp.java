@@ -18,7 +18,6 @@ public class SandwichShopApp {
             price = 8.95;
         }else {
             System.out.println("Invalid sandwich size!");
-            return; // exit program if input is invalid
         }
 
         // input loaded sandwich
