@@ -21,6 +21,14 @@ public class SandwichShopApp {
             return; // exit program if input is invalid
         }
 
+        // input loaded sandwich
+        System.out.print("Would you like  loaded sandwich?(yes/no)");
+        String loadedSandwich = scanner.nextLine();
+        if (loadedSandwich.equalsIgnoreCase("yes") && sandwichSize.equalsIgnoreCase("regular")) {
+            price += 1;
+        }else if(loadedSandwich.equalsIgnoreCase("yes") && sandwichSize.equalsIgnoreCase("large")){
+            price += 1.75;
+        }
 
         //input age
 
@@ -31,6 +39,7 @@ public class SandwichShopApp {
         } else if (age >= 65) {
              price = price * 0.80;
         }
+
 
         System.out.printf("The price of your %s sandwich is $%.2f\n",sandwichSize, price);
 
